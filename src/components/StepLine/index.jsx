@@ -5,7 +5,7 @@ import { useEffect, useState } from "react";
 import { Line } from "@ant-design/plots";
 
 // Định nghĩa component BasicLine để hiển thị biểu đồ
-function BasicLine() {
+function StepLine() {
     // Khai báo state để lưu dữ liệu biểu đồ, mặc định là một mảng rỗng
     const [dataChart, setDataChart] = useState([]);
 
@@ -25,23 +25,19 @@ function BasicLine() {
         data: dataChart, // Dữ liệu biểu đồ lấy từ state
         xField: "date",  // Trục X là ngày tháng
         yField: "quantity", // Trục Y là số lượng
-        smooth: true, // Làm mượt đường biểu đồ
-        point: true, // Hiển thị điểm trên đường biểu đồ
-        slider: {
-            start: 0,
-            end: 1
-        }
+
+
     };
 
 
     // JSX để render tiêu đề và biểu đồ
     return (
         <>
-            <h2>Basic Line</h2>
+            <h2>Step Line</h2>
             <Line  {...config} /> {/* Hiển thị biểu đồ với config đã cấu hình */}
         </>
     );
 }
 
 // Xuất component để có thể import vào file khác
-export default BasicLine;
+export default StepLine;

@@ -48,5 +48,134 @@
             "date": "12-2025",
             "quantity": 2300
         }
+    ],
+    "type": [
+        {
+            "year": "1850",
+            "value": 0,
+            "category": "Nhiên liệu lỏng"
+        },
+        {
+            "year": "1900",
+            "value": 200,
+            "category": "Nhiên liệu lỏng"
+        },
+        {
+            "year": "1950",
+            "value": 5000,
+            "category": "Nhiên liệu lỏng"
+        },
+        {
+            "year": "2000",
+            "value": 15000,
+            "category": "Nhiên liệu lỏng"
+        },
+        {
+            "year": "2020",
+            "value": 18000,
+            "category": "Nhiên liệu lỏng"
+        },
+        {
+            "year": "1850",
+            "value": 100,
+            "category": "Nhiên liệu rắn"
+        },
+        {
+            "year": "1900",
+            "value": 2500,
+            "category": "Nhiên liệu rắn"
+        },
+        {
+            "year": "1950",
+            "value": 7000,
+            "category": "Nhiên liệu rắn"
+        },
+        {
+            "year": "2000",
+            "value": 12000,
+            "category": "Nhiên liệu rắn"
+        },
+        {
+            "year": "2020",
+            "value": 14000,
+            "category": "Nhiên liệu rắn"
+        },
+        {
+            "year": "1850",
+            "value": 0,
+            "category": "Nhiên liệu khí"
+        },
+        {
+            "year": "1900",
+            "value": 100,
+            "category": "Nhiên liệu khí"
+        },
+        {
+            "year": "1950",
+            "value": 3000,
+            "category": "Nhiên liệu khí"
+        },
+        {
+            "year": "2000",
+            "value": 10000,
+            "category": "Nhiên liệu khí"
+        },
+        {
+            "year": "2020",
+            "value": 13000,
+            "category": "Nhiên liệu khí"
+        }
+    ],
+    "stepline-data": [
+        {
+            "year": "2015",
+            "value": 3000,
+            "category": "Doanh thu"
+        },
+        {
+            "year": "2016",
+            "value": 5000,
+            "category": "Doanh thu"
+        },
+        {
+            "year": "2017",
+            "value": 7000,
+            "category": "Doanh thu"
+        },
+        {
+            "year": "2018",
+            "value": 10000,
+            "category": "Doanh thu"
+        },
+        {
+            "year": "2019",
+            "value": 9000,
+            "category": "Doanh thu"
+        },
+        {
+            "year": "2020",
+            "value": 12000,
+            "category": "Doanh thu"
+        },
+        {
+            "year": "2021",
+            "value": 15000,
+            "category": "Doanh thu"
+        },
+        {
+            "year": "2022",
+            "value": 17000,
+            "category": "Doanh thu"
+        },
+        {
+            "year": "2023",
+            "value": 20000,
+            "category": "Doanh thu"
+        },
+        {
+            "year": "2024",
+            "value": 22000,
+            "category": "Doanh thu"
+        }
     ]
 }

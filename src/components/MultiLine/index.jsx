@@ -5,13 +5,13 @@ import { useEffect, useState } from "react";
 import { Line } from "@ant-design/plots";
 
 // Định nghĩa component BasicLine để hiển thị biểu đồ
-function BasicLine() {
+function MultiLine() {
     // Khai báo state để lưu dữ liệu biểu đồ, mặc định là một mảng rỗng
     const [dataChart, setDataChart] = useState([]);
 
     // useEffect chạy một lần sau khi component render để fetch dữ liệu từ API
     useEffect(() => {
-        fetch("http://localhost:3001/line-month") // Gửi request GET đến API
+        fetch("http://localhost:3001/type") // Gửi request GET đến API
             .then(res => res.json()) // Chuyển đổi response thành JSON
             .then(data => {
                 setDataChart(data); // Cập nhật state với dữ liệu nhận được
@@ -22,26 +22,29 @@ function BasicLine() {
 
     // Cấu hình biểu đồ, xác định trục x, trục y và dữ liệu
     const config = {
-        data: dataChart, // Dữ liệu biểu đồ lấy từ state
-        xField: "date",  // Trục X là ngày tháng
-        yField: "quantity", // Trục Y là số lượng
-        smooth: true, // Làm mượt đường biểu đồ
-        point: true, // Hiển thị điểm trên đường biểu đồ
-        slider: {
-            start: 0,
-            end: 1
-        }
+        data: dataChart,
+        xField: "year",
+        yField: "value",
+        seriesField: "category",
+        isGroup: true,
+        smooth: true,
+        point: {
+            size: 5,
+            shape: "circle",
+        },
+        interactions: [{ type: "slider", cfg: { start: 0, end: 0.5 } }], // Bật slider
     };
+
 
 
     // JSX để render tiêu đề và biểu đồ
     return (
         <>
-            <h2>Basic Line</h2>
+            <h2>MultiLine</h2>
             <Line  {...config} /> {/* Hiển thị biểu đồ với config đã cấu hình */}
         </>
     );
 }
 
 // Xuất component để có thể import vào file khác
-export default BasicLine;
+export default MultiLine;
